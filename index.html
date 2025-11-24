@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola mundo soy ivan</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f8ff; /* Color de fondo suave */
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        /* Estilos para la cara */
+        .cara-feliz {
+            width: 150px;
+            height: 150px;
+            background-color: #ffd700; /* Amarillo */
+            border-radius: 50%; /* Hace que sea un círculo */
+            border: 5px solid #000;
+            position: relative;
+            box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Los ojos */
+        .ojo {
+            width: 20px;
+            height: 20px;
+            background-color: #000;
+            border-radius: 50%;
+            position: absolute;
+            top: 45px;
+        }
+
+        .ojo.izquierdo {
+            left: 40px;
+        }
+
+        .ojo.derecho {
+            right: 40px;
+        }
+
+        /* La sonrisa */
+        .boca {
+            width: 80px;
+            height: 40px;
+            border-bottom: 8px solid #000;
+            border-radius: 0 0 40px 40px; /* Curva la parte de abajo */
+            position: absolute;
+            top: 70px;
+            left: 35px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hola mundo soy ivan</h1>
+
+    <div class="cara-feliz">
+        <div class="ojo izquierdo"></div>
+        <div class="ojo derecho"></div>
+        <div class="boca"></div>
+    </div>
+
+</body>
+</html>
